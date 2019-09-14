@@ -1,0 +1,1 @@
+console.log('Criando Site de Noticias');
