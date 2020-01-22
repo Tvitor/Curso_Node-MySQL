@@ -1,3 +1,5 @@
-let msg = "este modulo contem apenas uma string"
 
-module.exports = msg; //exportar conteudo
+module.exports = function(){
+    let msg = "este modulo contem apenas uma string";
+return msg;
+}; //exportar conteudo
