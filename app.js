@@ -1,15 +1,15 @@
 //library framework express
-//variable with return ()
-let express = require('express')();
-
+//variable with return (function)
+let express = require('express');
+let app = express();
 //views egine ejs
 
-express.set('view engine', 'ejs');
+app.set('view engine', 'ejs');
 
-express.get('/',function(req,res){
+app.get('/', function(req, res){
     res.render("secao/home");
 });
 
-express.listen(3000, function(){
+app.listen(3000, function(){
     console.log('servidor rodando com express');
 });
